@@ -11,7 +11,7 @@ public class Alumno {
 	ArrayList <Double> arrayNotasPractica;
 	private String ID;
 	
-	//Contructor
+	//Constructor
 	public Alumno() 
 	{
 		this.nombreAlumno = " ";
