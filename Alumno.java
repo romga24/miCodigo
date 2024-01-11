@@ -53,22 +53,22 @@ public class Alumno {
 	public double hacerMediaEstudiante() 
 	{
 		
-		double totalMedia = 0;
+	    double totalMedia = 0;
 	    double sumaMediaExamen = 0;
 	    double sumaMediaPractica = 0;
 		
-		for(int i = 0; i < arrayNotasExamen.size(); i++) {
-			sumaMediaExamen += arrayNotasExamen.get(i);
-		}
+	    for(int i = 0; i < arrayNotasExamen.size(); i++) {
+		sumaMediaExamen += arrayNotasExamen.get(i);
+	    }
 		
-		for(int j = 0; j < arrayNotasPractica.size(); j++) {
-			sumaMediaPractica += arrayNotasPractica.get(j);
-		}
+	    for(int j = 0; j < arrayNotasPractica.size(); j++) {
+		sumaMediaPractica += arrayNotasPractica.get(j);
+	    }
 		
 		
-		totalMedia = (sumaMediaExamen/arrayNotasExamen.size() * 0.80) + (sumaMediaPractica/arrayNotasPractica.size() * 0.20);
+	     totalMedia = (sumaMediaExamen/arrayNotasExamen.size() * 0.80) + (sumaMediaPractica/arrayNotasPractica.size() * 0.20);
 		
-		return totalMedia;
+	     return totalMedia;
 	}
 	
 	public String toString() 
