@@ -44,8 +44,8 @@ public class Celda {
 	}
 		
 	//Método getter que me devuelve la posicion de Y
-    public int getPosY() 
-    {	
+    	public int getPosY() 
+    	{	
 		return this.posY;
 	}
     
