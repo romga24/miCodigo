@@ -1,4 +1,4 @@
-package excepciones;
+package Excepciones;
 
 import java.util.Scanner;
 
