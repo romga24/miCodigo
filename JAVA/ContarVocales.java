@@ -3,10 +3,8 @@ package problemas;
 import java.util.Scanner;
 
 public class ContarVocales {
-
 	public static void main(String [] args) 
 	{
-		
 		char vocales [] = {'a', 'e', 'i','o', 'u'};
 		int contador = 0;
 		Scanner sc = new Scanner(System.in);
