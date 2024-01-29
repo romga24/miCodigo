@@ -65,16 +65,13 @@ public class Alumno {
 		sumaMediaPractica += arrayNotasPractica.get(j);
 	    }
 		
-		
 	     totalMedia = (sumaMediaExamen/arrayNotasExamen.size() * 0.80) + (sumaMediaPractica/arrayNotasPractica.size() * 0.20);
-		
 	     return totalMedia;
 	}
-	
+	@Override
 	public String toString() 
 	{
-		double media = hacerMediaEstudiante();
-		return "El alumno " + "con ID " + ID + " " + nombreAlumno + " " + apellidoAlumno + " " + "ha sacado una media de " + media;
+	     double media = hacerMediaEstudiante();
+	     return "El alumno " + "con ID " + ID + " " + nombreAlumno + " " + apellidoAlumno + " " + "ha sacado una media de " + media;
 	}
-	
 }
