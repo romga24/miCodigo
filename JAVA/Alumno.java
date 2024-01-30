@@ -58,16 +58,17 @@ public class Alumno {
 	    double sumaMediaPractica = 0;
 		
 	    for(int i = 0; i < arrayNotasExamen.size(); i++) {
-		sumaMediaExamen += arrayNotasExamen.get(i);
+			sumaMediaExamen += arrayNotasExamen.get(i);
 	    }
 		
 	    for(int j = 0; j < arrayNotasPractica.size(); j++) {
-		sumaMediaPractica += arrayNotasPractica.get(j);
+			sumaMediaPractica += arrayNotasPractica.get(j);
 	    }
 		
 	     totalMedia = (sumaMediaExamen/arrayNotasExamen.size() * 0.80) + (sumaMediaPractica/arrayNotasPractica.size() * 0.20);
 	     return totalMedia;
 	}
+	
 	@Override
 	public String toString() 
 	{
