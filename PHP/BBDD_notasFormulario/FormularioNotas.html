@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Notas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+
+<div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+    <h2 class="text-2xl font-bold mb-3 text-center">Formulario de Notas</h2>
+    <form method="post" action="formulario.php">
+        <div class="alumno">
+            <p class="text-base font-bold mb-4 text-center">Alumno 1</p>
+            <div class="mb-4">
+                <label for="nombreAlumno" class="block text-sm font-semibold text-gray-600">Nombre del alumno:</label>
+                <input type="text" name="nombreAlumno[0]" id="nombreAlumno" class="w-full p-2 border rounded-full">
+            </div>
+        <div class="mb-4">
+            <label for="apellidoAlumno" class="block text-sm font-semibold text-gray-600">Apellido del alumno:</label>
+            <input type="text" name="apellidoAlumno[0]" id="apellidoAlumno" class="w-full p-2 border rounded-full">
+        </div>
+        <div class="mb-4">
+            <label for="nota1" class="block text-sm font-semibold text-gray-600">Nota 1:</label>
+            <input type="text" name="nota[0][0]" id="nota1" class="w-full p-2 border rounded-full">
+        </div>
+        <div class="mb-4">
+            <label for="nota2" class="block text-sm font-semibold text-gray-600">Nota 2:</label>
+            <input type="text" name="nota[0][1]" id="nota2" class="w-full p-2 border rounded-full">
+        </div>
+        <div class="mb-4">
+            <label for="nota3" class="block text-sm font-semibold text-gray-600">Nota 3:</label>
+            <input type="text" name="nota[0][2]" id="nota3" class="w-full p-2 border rounded-full">
+        </div>
+        </div>
+        <div class="alumno">
+            <p class="text-base font-bold mb-4 text-center">Alumno 2</p>
+            <div class="mb-4">
+                <label for="nombreAlumno" class="block text-sm font-semibold text-gray-600">Nombre del alumno:</label>
+                <input type="text" name="nombreAlumno[1]" id="nombreAlumno" class="w-full p-2 border rounded-full">
+            </div>
+        <div class="mb-4">
+            <label for="apellidoAlumno" class="block text-sm font-semibold text-gray-600">Apellido del alumno:</label>
+            <input type="text" name="apellidoAlumno[1]" id="apellidoAlumno" class="w-full p-2 border rounded-full">
+        </div>
+        <div class="mb-4">
+            <label for="nota1" class="block text-sm font-semibold text-gray-600">Nota 1:</label>
+            <input type="text" name="nota[1][0]" id="nota1" class="w-full p-2 border rounded-full">
+        </div>
+        <div class="mb-4">
+            <label for="nota2" class="block text-sm font-semibold text-gray-600">Nota 2:</label>
+            <input type="text" name="nota[1][1]" id="nota2" class="w-full p-2 border rounded-full">
+        </div>
+        <div class="mb-4">
+            <label for="nota3" class="block text-sm font-semibold text-gray-600">Nota 3:</label>
+            <input type="text" name="nota[1][2]" id="nota3" class="w-full p-2 border rounded-full">
+        </div>
+        </div>
+        <div class="alumno">
+            <p class="text-base font-bold mb-4 text-center">Alumno 3</p>
+            <div class="mb-4">
+                <label for="nombreAlumno" class="block text-sm font-semibold text-gray-600">Nombre del alumno:</label>
+                <input type="text" name="nombreAlumno[2]" id="nombreAlumno" class="w-full p-2 border rounded-full">
+            </div>
+            <div class="mb-4">
+                <label for="apellidoAlumno" class="block text-sm font-semibold text-gray-600">Apellido del alumno:</label>
+                <input type="text" name="apellidoAlumno[2]" id="apellidoAlumno" class="w-full p-2 border rounded-full">
+            </div>
+            <div class="mb-4">
+                <label for="nota1" class="block text-sm font-semibold text-gray-600">Nota 1:</label>
+                <input type="text" name="nota[2][0]" id="nota1" class="w-full p-2 border rounded-full">
+            </div>
+            <div class="mb-4">
+                <label for="nota2" class="block text-sm font-semibold text-gray-600">Nota 2:</label>
+                <input type="text" name="nota[2][1]" id="nota2" class="w-full p-2 border rounded-full">
+            </div>
+            <div class="mb-4">
+                <label for="nota3" class="block text-sm font-semibold text-gray-600">Nota 3:</label>
+                <input type="text" name="nota[2][2]" id="nota3" class="w-full p-2 border rounded-full">
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <button type="submit" class="bg-black text-white px-4 py-2 rounded-md">Enviar</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
