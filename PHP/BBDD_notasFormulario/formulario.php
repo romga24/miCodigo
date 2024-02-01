@@ -47,9 +47,9 @@
                     $consultaUno->bindParam(':apellido', $apellidoAlumno[$i], PDO::PARAM_STR);
                     $consultaUno->execute();
         
-                    $stmt = $conn->query("SELECT LAST_INSERT_ID() as last_id");
+                    $stmt = $conn->query("SELECT LAST_INSERT_ID() AS ultimoId");
                     $result = $stmt->fetch(PDO::FETCH_ASSOC);
-                    $idEstudiante = $result['last_id'];
+                    $idEstudiante = $result['ultimoId'];
         
                     for ($j = 0; $j < count($notasAlumno[$i]); $j++) {
                         $nota = str_replace(',', '.', $notasAlumno[$i][$j]);
