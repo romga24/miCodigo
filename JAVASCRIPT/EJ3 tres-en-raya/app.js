@@ -13,8 +13,10 @@ function manejarClic(fila, columna) {
         if (verificarGanador()) {
             if (turnoJugadorX) {
                 alert("Ha ganado el jugador X");
+                location.reload(true);
             } else {
                 alert("Ha ganado el jugador O");
+                location.reload(true);
             }
         }
         turnoJugadorX = !turnoJugadorX;
